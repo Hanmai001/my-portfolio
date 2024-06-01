@@ -61,6 +61,11 @@ onUnmounted(() => {
           >About</RouterLink
         >
         <RouterLink
+          to="/#qualification"
+          :class="{ 'text-primary': currentPath === '/' && activeSection === 'qualification' }"
+          >Qualification</RouterLink
+        >
+        <RouterLink
           to="/#experience"
           :class="{ 'text-primary': currentPath === '/' && activeSection === 'experience' }"
           >Experience</RouterLink
@@ -87,6 +92,11 @@ onUnmounted(() => {
             to="/#about"
             :class="{ 'text-primary': currentPath === '/' && activeSection === 'about' }"
             >About</RouterLink
+          >
+          <RouterLink
+            to="/#experience"
+            :class="{ 'text-primary': currentPath === '/' && activeSection === 'qualification' }"
+            >Qualification</RouterLink
           >
           <RouterLink
             to="/#experience"

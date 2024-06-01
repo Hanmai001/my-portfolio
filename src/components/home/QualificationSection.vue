@@ -1,5 +1,5 @@
 <template>
-  <section class="qualification-section">
+  <section class="qualification-section" id="qualification">
     <div class="section-header">
       <h2 class="section-title">Qualifications</h2>
       <p class="section-subtitle">My skills and <span class="text-primary">expertise</span></p>
