@@ -112,6 +112,10 @@ onMounted(() => {
 
         <p class="text-gray-500 text-sm">{{ item.time }}</p>
       </div>
+       <div>
+        <h4 class="font-bold">Team :</h4>
+        <p class="text-gray-600">{{ item.team }}</p>
+      </div>
       <div>
         <h4 class="font-bold">Front-end :</h4>
         <p class="text-gray-600">{{ item.technology.front }}</p>

@@ -50,7 +50,10 @@ onUnmounted(() => {
 <template>
   <header :class="['header', { sticky: isSticky }]">
     <div class="header-wrapper">
-      <div class="header-name">HELEN MAI</div>
+      <div class="header-name">
+        <i class="fa-solid fa-heart" style="color: #ff4242;"></i>
+        HELEN MAI
+      </div>
       <nav class="header-nav">
         <RouterLink to="/" :class="{ 'text-primary': currentPath === '/' && activeSection === '' }"
           >Home</RouterLink
@@ -94,7 +97,7 @@ onUnmounted(() => {
             >About</RouterLink
           >
           <RouterLink
-            to="/#experience"
+            to="/#qualification"
             :class="{ 'text-primary': currentPath === '/' && activeSection === 'qualification' }"
             >Qualification</RouterLink
           >
@@ -132,7 +135,7 @@ onUnmounted(() => {
   border: 0;
 }
 .header-name {
-  @apply text-xl font-medium flex items-center;
+  @apply text-xl font-medium flex items-center gap-2;
 }
 .sticky {
   @apply py-4 shadow-md bg-white;

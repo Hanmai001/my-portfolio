@@ -71,6 +71,9 @@ const qualifications = ref([
         name: 'UX/UI',
         description:
           'Understanding of user experience (UX) and user interface (UI) design principles'
+      },
+      {
+        name: 'SEO'
       }
     ]
   },
